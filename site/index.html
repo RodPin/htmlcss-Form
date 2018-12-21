@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+  </head>
+  <body bgcolor="#3399ff">
+    <div class="container">
+      <div id="formulario">
+        <div class="div_Titulo">
+          <br />
+          <p class="titulo">Peça seu orçamento agora mesmo!</p>
+        </div>
+        <form name="myForm">
+          <div class="div">
+            <!-- <input placeholder="Nome" class="input_Nome" id="Nome" /> -->
+            <input type="text" class="input_Nome" id="Nome" required />
+            <span class="floating-label">Nome</span>
+
+            <input placeholder="E-mail" class="input_Email" id="E-mail" />
+          </div>
+          <div class="div">
+            <input
+              placeholder="Telefone"
+              class="input_Telefone"
+              id="Telefone"
+            />
+            <div class="fake-input">
+              <input
+                placeholder="Escolha o serviço que deseja"
+                class="input_Serviço"
+                id="Serviço"
+              />
+              <img src="Imagens/7.png" width="15" class="img_FakeInput" />
+            </div>
+          </div>
+          <div class="div">
+            <input
+              placeholder="Mensagem"
+              class="input_Mensagem"
+              id="Mensagem"
+            />
+          </div>
+          <div class="div_Botao">
+            <button class="botao" onClick="check();return false;">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="sucesso" style="display:none;">
+        <div class="div_Sucesso">
+          <br />
+          <p class="Mensagem_Sucesso">Formulario Preenchido com sucesso</p>
+          <img src="Imagens/sucesso.png" width="30" class="img_Sucesso" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
